@@ -6,11 +6,11 @@ const Card = ({ pokeName, image, onClick, index }) => {
 		<article className="flip-card">
 			<div className="flip-card-inner">
 				<div className="front-face">
-					<img src={image} alt={pokeName} />
+					<img src={pokeball} alt="pokeball" />
 				</div>
 
 				<div className="back-face">
-					<img src={pokeball} alt="pokeball" />
+					<img src={image} alt={pokeName} />
 				</div>
 			</div>
 		</article>
