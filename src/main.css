@@ -1,0 +1,149 @@
+* {
+	box-sizing: border-box;
+	line-height: 1.5;
+}
+
+body {
+	margin: 0;
+}
+
+/* #AppContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+} */
+
+#BoardContainer {
+	/* display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	justify-items: center;
+	align-items: stretch;
+	gap: 1rem;
+	width: 80%;
+	height: 100vh;
+	margin: auto; */
+
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	align-items: center;
+}
+
+#CardsContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+	width: 150px;
+	height: auto;
+}
+
+.card img {
+	width: 90%;
+	height: auto;
+	margin: auto;
+}
+/*/////////////////////////////////////*/
+/* .bold {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.App {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	header {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 8px;
+
+		> div {
+			font-size: 15px;
+			width: 324px;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+
+	footer {
+		width: 360px;
+		position: relative;
+		margin: 0 auto;
+		padding: 10px 4px;
+		margin-top: 10px;
+
+		.score {
+			justify-content: center;
+			display: flex;
+
+			div {
+				padding: 8px;
+			}
+		}
+
+		.restart {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	.container {
+		border: 1px solid #dedede;
+		padding: 12px;
+		box-shadow: 0 0 4px 4px #dedede;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		justify-items: center;
+		align-items: stretch;
+		gap: 1rem;
+		margin: 0 auto;
+		width: 360px;
+		height: 300px;
+		perspective: 100%;
+		max-width: 720px;
+	}
+}
+
+.card {
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	box-shadow: 2px 2px 4px 4px #dedede;
+	transition: 0.3s;
+	transform-style: preserve-3d;
+	position: relative;
+	cursor: pointer;
+
+	img {
+		width: 95%;
+		height: 95%;
+	}
+
+	.card-face {
+		backface-visibility: hidden;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		&.card-back-face {
+			transform: rotateY(180deg);
+		}
+	}
+
+	&.is-flipped {
+		transform: rotateY(180deg);
+	}
+
+	&.is-inactive {
+		// visibility: hidden;
+		opacity: 0;
+	}
+}
+ */
+
