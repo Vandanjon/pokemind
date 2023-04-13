@@ -4,38 +4,51 @@ import salameche from "../assets/salameche.png";
 import carapuce from "../assets/carapuce.png";
 import roucarnage from "../assets/roucarnage.png";
 import papillusion from "../assets/papillusion.png";
+import pokeball from "../assets/pokeball.png";
 
 
 const cardsArray = [
     {
         id: 1,
         pokeName: "Pikachu",
-        image: pikachu,
+        imageFront: pikachu,
+        imageBack: pokeball,
+        matched: false
     },
     {
         id: 2,
         pokeName: "Papillusion",
-        image: papillusion,
+        imageFront: papillusion,
+        imageBack: pokeball,
+        matched: false
     },
     {
         id: 3,
         pokeName: "Salamèche",
-        image: salameche,
+        imageFront: salameche,
+        imageBack: pokeball,
+        matched: false
     },
     {
         id: 4,
         pokeName: "Carapuce",
-        image: carapuce,
+        imageFront: carapuce,
+        imageBack: pokeball,
+        matched: false
     },
     {
         id: 5,
         pokeName: "Roucarnage",
-        image: roucarnage,
+        imageFront: roucarnage,
+        imageBack: pokeball,
+        matched: false
     },
     {
         id: 6,
         pokeName: "Bulbizarre",
-        image: bulbizarre,
+        imageFront: bulbizarre,
+        imageBack: pokeball,
+        matched: false
     },
 ];
 

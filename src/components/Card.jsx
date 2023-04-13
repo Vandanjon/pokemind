@@ -1,17 +1,23 @@
-import pokeball from "../assets/pokeball.png";
+import { useState } from "react";
 
-const Card = ({ pokeName, image, onClick, index }) => {
+const Card = ({ card, handleChoice, flipped, disabled }) => {
+	const handleClick = () => {
+		if (!disabled) {
+			handleChoice(card);
+		}
+	};
+
 	return (
-		// <article className="flip-card" onClick={() => onClick(index)}>
-		<article className="flip-card">
-			<div className="flip-card-inner">
-				<div className="front-face">
-					<img src={pokeball} alt="pokeball" />
-				</div>
+		<article className="card">
+			<div className={flipped ? "flipped" : ""}>
+				<img src={card.imageFront} alt="pokeball" className="front" />
 
-				<div className="back-face">
-					<img src={image} alt={pokeName} />
-				</div>
+				<img
+					src="./src/assets/pokeball.png"
+					alt={card.pokeName}
+					className="back"
+					onClick={handleClick}
+				/>
 			</div>
 		</article>
 	);
