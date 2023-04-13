@@ -13,7 +13,7 @@ const Card = ({ card, handleChoice, flipped, disabled }) => {
 				<img src={card.imageFront} alt="pokeball" className="front" />
 
 				<img
-					src="./src/assets/pokeball.png"
+					src={card.imageBack}
 					alt={card.pokeName}
 					className="back"
 					onClick={handleClick}
